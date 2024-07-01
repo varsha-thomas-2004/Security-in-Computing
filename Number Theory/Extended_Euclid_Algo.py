@@ -4,6 +4,7 @@
 def Extended_Euclid(a, b):
     t1 = 0
     t2 = 1
+    x = a
     while b != 0:
         t = t1 - (a//b)*t2
         r = a % b
@@ -12,7 +13,10 @@ def Extended_Euclid(a, b):
         t1 = t2
         t2 = t
     else:
-        return t1
+        if t1 < 0:
+            return x + t1
+        else:
+            return t1
 
 #Main
 print("MULTIPLICATIVE INVERSE USING EXTENDED EUCLID'S ALGORITHM")
