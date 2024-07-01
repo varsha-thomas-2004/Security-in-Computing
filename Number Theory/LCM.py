@@ -8,7 +8,7 @@ def Euclid (a,b):
         return Euclid (b, a % b)
     
 #Main   
-print("EUCLID'S ALGORITHM FOR GREATEST COMMON DIVISOR")
+print("LEAST COMMON MULTIPLE")
 a = int(input("Enter a: "))
 b = int(input("Enter b: "))
 GCD = Euclid(a, b)
