@@ -6,7 +6,7 @@ import random
 def Fermat(p):
     a = random.randint(1, p - 1) #chooses a, such that 1 <= a < p
     x = a**p - a
-    if x % p == 0: #is a^p - a is a multiple of p, then p is prime
+    if x % p == 0: #if a^p - a is a multiple of p, then p is prime
         print(p, "is prime.")
     else:
         print(p, "is composite.")
